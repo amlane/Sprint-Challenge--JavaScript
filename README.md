@@ -40,7 +40,7 @@ Edit this document to include your answers after each question. Make sure to lea
     New binding - A constructor function that can create a new object. This will require the use of the `new` keyword.
     Explicit - When you use the methods `.apply()`, `.bind()`, or `.call()`. This methods allow parameters in a special order to be passed through as well as data, with type requirements. For example, `.apply()` allows the first parameter to be the object you want `this` to apply to and the 2nd parameter would be data, but in the case of apply, it must be an array.
 5. Why do we need super() in an extended class?
-    The `super()` keyword replaces the line `Humanoid.prototype = Object.create(CharacterStats.prototype);` when you're creating pseudo classical inheritance for your objects/constructor functions.
+    The `super()` keyword replaces the line `Child.prototype = Object.create(Parent.prototype);` when you're creating pseudo classical inheritance for your objects/constructor functions.
 
 ## Project Set up
 
