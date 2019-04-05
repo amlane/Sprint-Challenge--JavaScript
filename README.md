@@ -29,14 +29,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-
+    .forEach does not create a new array and .map does.
 2. What is the difference between a function and a method?
-
+    A method itself is a function but a function is only called a method when the function is a property of an object.
 3. What is closure?
-
+    A closure is a function that lives within a bubble and can keep a memory of itself.
 4. Describe the four rules of the 'this' keyword.
-
+    Window Binding - This means if you're not pointing to a specific object, the `this` keyword will point to the window, the parent object.
+    Implicit Binding - This is when you have an object being called to the left of the dot when calling a function. 
+    New binding - A constructor function that can create a new object. This will require the use of the `new` keyword.
+    Explicit - When you use the methods `.apply()`, `.bind()`, or `.call()`. This methods allow parameters in a special order to be passed through as well as data, with type requirements. For example, `.apply()` allows the first parameter to be the object you want `this` to apply to and the 2nd parameter would be data, but in the case of apply, it must be an array.
 5. Why do we need super() in an extended class?
+    The `super()` keyword replaces the line `Child.prototype = Object.create(Parent.prototype);` when you're creating pseudo classical inheritance for your objects/constructor functions.
 
 ## Project Set up
 
